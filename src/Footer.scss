@@ -1,0 +1,70 @@
+.footer {
+    box-sizing: border-box;
+    width: 80%;
+    height: 250px;
+    padding-top: 40px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid gray;
+    margin: auto auto;
+
+    &__icon {
+        padding-right: 20px;
+        color: gray;
+        font-size: 20px;
+        padding-bottom: 18px;
+
+        &--color {
+            padding-right: 20px;
+        }
+    }
+
+    &__infomation {
+        display: flex;
+        padding-bottom: 10px;
+
+        justify-content: space-between;
+        &--detail {
+            color: gray;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+    }
+
+    &__button > button {
+        background-color: transparent;
+        color: gray;
+        border-color: gray;
+        padding: 5px 5px;
+
+        font-size: 0.8rem;
+        cursor: pointer;
+
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    &__copyright {
+        font-weight: 500;
+        font-size: 0.6rem;
+        color: gray;
+        padding-top: 10px;
+    }
+
+    &__icon--color:hover,
+    &__infomation--detail > p:hover {
+        cursor: pointer;
+        color: #fff;
+        transition: all 0.25s ease-in-out 0.125s;
+    }
+
+    &__button > button:hover {
+        color: gray;
+        background-color: #fff;
+        transition: all 0.25s ease-in-out 0.125s;
+    }
+}

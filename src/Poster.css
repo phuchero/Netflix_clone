@@ -1,0 +1,75 @@
+.poster:hover .poster__detail{
+    transform: translateY(-200%);
+    opacity: 1;
+}
+
+
+.poster:hover {
+    transform: scale(1.09);
+    
+   
+}
+.poster:hover .poster__img{
+    opacity: 0.3;
+}
+
+.poster {
+    /* ở poster set thuộc tính này */
+    /* khi hover thì thuộc tính transform scale 1.08*/
+    /* kích hoạt ham số transform ở transison và thực hiện nó trong 300ms */
+    /* /* margin-right: 10px; */
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+   
+    margin-right: 10px;
+    position: relative;
+    transition: transform 300ms;
+}
+
+.poster__img {
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    max-height: 150px;
+
+
+    max-width: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    
+   
+}
+
+.poster__img--large {
+    max-height: inherit;
+}
+
+.poster__title {
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    
+}
+
+.poster__overview {
+  
+    font-size: 0.8rem;
+    color: #c4c4c4;
+ 
+   
+}
+.poster__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition:all 0.1s ease-in-out 0.1s;
+    transform: translateY(-50px);
+}
+
+
+
